@@ -1,54 +1,44 @@
+/*
+ * main.cpp
+ *
+ *  Created on: 2021.10.13
+ *      Author: 	bb.y
+ */
+
+
 #include <iostream>
 #include "json/json.h"
 #include <fstream>
  
+#include "jsoncpp_mode.h"
+#include "string2Json.h"
+
 using namespace std;
  
+JsoncppMode JsoncppMode_;
+Jsonpkg		Jsonpkg_; 
  
-void readStrJson()
-{
-	//字符串  
-	const char* str =
-	"{\"name\":\"shuiyixin\",\"age\":\"21\",\"sex\":\"man\"}";
-//	"{
-//		"name" : "shuiyixin",
-//		"age" : "21",
-//		"sex" : "man"
-//	}";
- 
- 
-//	Json::Reader reader;
-//	Json::Value root;
 
-	Json::CharReaderBuilder b;
-	Json::CharReader * reader(b.newCharReader());
-	Json::Value root;
-	JSONCPP_STRING errs;
-	bool ok = reader->parse(str, str + std::strlen(str), &root, &errs);
-	
-	if(ok && errs.size() == 0)
-	{
-		string name = root["name"].asString();
-                int age = root["nomen"].asInt();
-                string sex = root["sex"].asString();
-                cout << name + "," << age << "," << sex <<  endl;
-
-	}
-
-#if 0
-	//从字符串中读取数据  
-	if (reader.parse(str, root))
-	{
-		string name = root["name"].asString();
-		int age = root["nomen"].asInt();
-		string sex = root["sex"].asString();
-		cout << name + "," << age << "," << sex <<  endl;
-	}
-#endif
-}
- 
 int main(void)
 {
-        readStrJson();
-        return 0;
+   	const char * parseJson_str = "{                         \
+        \"Age\" : 26,	                                    \
+        \"E-mail\" : 	                                    \
+        {                                                   \
+            \"Hotmail\" : \"liming.shao@hotmail.com\",      \
+            \"Netease\" : \"lmshao@163.com\"                \
+        },                                                  \
+        \"Language\" :                                      \
+        [                                                   \
+            \"C++\",                                        \
+            \"Java\"                                        \
+        ],                                                  \
+        \"Name\" : \"Liming\"                               \
+    }";   
+
+	//example of how to assembel data to json string.
+	JsoncppMode_.AssembleDataToJson();
+
+	//example of how to split json string.
+	JsoncppMode_.parseJson(parseJson_str);
 }

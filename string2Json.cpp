@@ -1,17 +1,12 @@
 /*
- * param.cpp
+ * string2Json.cpp
  *
- *  Created on: 2021年4月20日
- *      Author: zy
+ *  Created on: 2021.10.13
+ *      Author: 	bb.y
  */
 
-#include "jsonpkg.h"
-#include "common.h"
 
-namespace dvr
-{
-namespace oms
-{
+#include "string2Json.h"
 
 Jsonpkg::Jsonpkg()
 {
@@ -216,7 +211,3 @@ std::string Jsonpkg::getKeyValueArray(std::string sKey, std::string sArray)
 
     return strResult;
 }
-
-}			//oms
-}			//dvr
-
