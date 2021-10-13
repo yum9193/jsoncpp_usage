@@ -20,6 +20,7 @@ public:
 public:
 	std::string AssembleDataToJson();
 	bool parseJson(const std::string &info);
+	void writeJsonStringToFile();
 
 
 private:

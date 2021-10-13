@@ -18,3 +18,4 @@ $(OBJ):%.o: %.cpp
 clean:
 	rm -f *.o
 	rm -f $(TARGET)
+	rm -f *.json

@@ -41,4 +41,7 @@ int main(void)
 
 	//example of how to split json string.
 	JsoncppMode_.parseJson(parseJson_str);
+
+	//example of write json string to file
+	JsoncppMode_.writeJsonStringToFile();
 }
