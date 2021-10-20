@@ -26,7 +26,7 @@ public:
 private:
 
 
-	//add nothing 
+	//add nothing useful.
 };
 
 
