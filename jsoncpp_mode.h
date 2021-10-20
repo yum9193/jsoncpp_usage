@@ -24,9 +24,8 @@ public:
 
 
 private:
-//add for tests
 
 };
-
+//aaaaa
 
 #endif /* JSONCPP_MODE_H_ */
