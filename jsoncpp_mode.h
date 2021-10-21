@@ -24,8 +24,7 @@ public:
 
 
 private:
-//reserved aaaaaabbbbb
-
+//function A
 };
 
 #endif /* JSONCPP_MODE_H_ */
