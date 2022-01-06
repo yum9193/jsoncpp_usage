@@ -44,4 +44,6 @@ int main(void)
 
 	//example of write json string to file
 	JsoncppMode_.writeJsonStringToFile();
+
+	return 0;
 }
