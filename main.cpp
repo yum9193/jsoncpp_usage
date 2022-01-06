@@ -36,6 +36,8 @@ int main(void)
         \"Name\" : \"Liming\"                               \
     }";   
 
+	// some comments.
+
 	//example of how to assembel data to json string.
 	JsoncppMode_.AssembleDataToJson();
 
