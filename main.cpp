@@ -2,7 +2,7 @@
  * main.cpp
  *
  *  Created on: 2021.10.13
- *      Author: 	bb.y
+ *  Author    : bb.y
  */
 
 
@@ -17,11 +17,11 @@ using namespace std;
  
 JsoncppMode JsoncppMode_;
 Jsonpkg		Jsonpkg_; 
- 
 
 int main(void)
 {
-   	const char * parseJson_str = "{                         \
+   	const char * parseJson_str = 
+	"{                         			    \
         \"Age\" : 26,	                                    \
         \"E-mail\" : 	                                    \
         {                                                   \
