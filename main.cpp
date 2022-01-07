@@ -45,3 +45,9 @@ iii	//example of how to assembel data to json string.
 	//example of write json string to file
 	JsoncppMode_.writeJsonStringToFile();
 }
+
+
+ //# #####
+
+
+
