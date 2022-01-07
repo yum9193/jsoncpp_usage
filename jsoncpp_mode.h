@@ -25,6 +25,10 @@ public:
 
 private:
 //function A
+<<<<<<< HEAD
+=======
+//function B 
+>>>>>>> f737a57780140b4f74cd90b620b136ef999970ce
 };
 
 #endif /* JSONCPP_MODE_H_ */
